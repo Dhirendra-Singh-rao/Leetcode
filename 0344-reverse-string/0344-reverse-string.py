@@ -1,10 +1,14 @@
 class Solution:
     def reverseString(self, s: List[str]) -> None:
-        for i in range(len(s)):
-            for j in range(i+1,len(s)):
-                if i<j:
-                    s[i],s[j]=s[j],s[i]
-        return s
+        """i =0 
+        j=len(s)-1
+        while i<=j:
+            if i<j:
+                s[i],s[j]=s[j],s[i]
+            i+=1 
+            j-=1
+        return s"""
+        s.reverse()
        
         
         
